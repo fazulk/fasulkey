@@ -1,0 +1,22 @@
+scalar Date
+
+type Resume {
+    email: String
+    url: String
+    location: String
+    name: String
+    objective: String
+    languages: [String]
+    experience: [Linear]
+    education: [Linear]
+    affiliations: [Linear]
+}
+
+type Linear {
+    title: String
+    subTitle: String
+    location: String
+    startDate: Date
+    endDate: Date
+    points: [String]
+}
