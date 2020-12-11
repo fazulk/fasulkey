@@ -2,7 +2,10 @@ import mongodb from 'mongodb'
 
 const MongoClient = mongodb.MongoClient
 
-const url = `mongodb+srv://keyb0ard:${process.env.MONGO_PW}@topazcluster.p7xiq.mongodb.net/fasulkey?retryWrites=true&w=majority`
+const url =
+    process.env.NODE_ENV === `production`
+        ? `mongodb+srv://keyb0ard:${process.env.MONGO_PW}@topazcluster.p7xiq.mongodb.net/fasulkey?retryWrites=true&w=majority`
+        : `mongodb://localhost:27017/fasulkey`
 
 const options = {
     useNewUrlParser: true,

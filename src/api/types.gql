@@ -3,6 +3,7 @@ scalar Date
 type Resume {
     email: String
     url: String
+    github: String
     location: String
     name: String
     objective: String
