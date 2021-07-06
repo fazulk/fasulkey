@@ -10,9 +10,9 @@
             <li>
                 <a href="https://github.com/fazulk">GitHub</a>
             </li>
-            <li>
+            <!-- <li>
                 <router-link to="/resume">Resume</router-link>
-            </li>
+            </li> -->
         </ul>
     </div>
 </template>
